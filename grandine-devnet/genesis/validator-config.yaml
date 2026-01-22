@@ -1,0 +1,38 @@
+shuffle: roundrobin
+# Deployment mode: 'local' for local deployment, 'ansible' for remote deployment via Ansible
+deployment_mode: local
+config:
+  activeEpoch: 18
+  keyType: "hash-sig"
+validators:
+  - name: "grandine_0"
+    privkey: "72768a76d5994816bfbbed85eb01ab99bc0a8c399f5b9e1fb7497d054e67ebc0"
+    enrFields:
+      ip: "127.0.0.1"
+      quic: 9006
+    metricsPort: 8086
+    count: 1
+
+  - name: "grandine_1"
+    privkey: "aa0acd3d45eef6142a078ac4b0db9ebdff494cce9d556a374e25a9724e9aa761"
+    enrFields:
+      ip: "127.0.0.1"
+      quic: 9001
+    metricsPort: 8081
+    count: 1
+
+  - name: "grandine_2"
+    privkey: "4ea7ad6945d6a77c697f5c1e479ead51bf49ed8da8e2f60ecbc241e4db3df867"
+    enrFields:
+      ip: "127.0.0.1"
+      quic: 9002
+    metricsPort: 8082
+    count: 1
+
+  - name: "grandine_3"
+    privkey: "57b3b53803bc2ce43c12c0c7adbfaa3bfbb6fa1e4945f03372c13f2171514a5c"
+    enrFields:
+      ip: "127.0.0.1"
+      quic: 9003
+    metricsPort: 8083
+    count: 1
